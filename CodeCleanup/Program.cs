@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System;
 using System.Linq;
-
+using System.Collections.Generic;
 
 namespace CodeCleanup
 {
@@ -25,5 +25,20 @@ namespace CodeCleanup
             //todo add ability to store agE
             
         }
+
+        public string combineName(string myFirstName, string myLastName, string Together, DateTime log) {
+            List<string> list = new List<string>() { myFirstName, myLastName, Together };
+            IEnumerable<string> ts() {
+                foreach (var item in list)
+                {
+                    if (item.Length > 5) { yield return item; }
+                }
+                yield break;
+            }
+            return "true";
+        }
+
+
+
     }
 }
