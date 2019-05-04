@@ -1,6 +1,4 @@
-﻿Throughout I added funny comments and 
-Kept the default line when creating .NET Core Console
-
+## Code Cleanup Sample
 
 Line 1-3 - Shows Sort Usings and Remove unnessary usings
 Line 10 - Add proper accessibility modifiers
